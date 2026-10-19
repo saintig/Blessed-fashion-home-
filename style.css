@@ -1,0 +1,747 @@
+
+/* =====================================
+   BLESSED FASHION HOME
+   Where African Art Meets Fashion
+   ===================================== */
+
+/* COLOURS AND BASIC SETTINGS */
+
+:root {
+  --gold: #d4af37;
+  --gold-dark: #a98220;
+  --ivory: #fff9ed;
+  --cream: #f8f0df;
+  --purple: #49305f;
+  --purple-light: #684b7d;
+  --rose: #e7b8a1;
+  --text: #493b32;
+  --white: #ffffff;
+  --border: #eadfc9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--ivory);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 85px 5%;
+}
+
+/* HEADER AND LOGO */
+
+.site-header {
+  width: 100%;
+  min-height: 88px;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: var(--ivory);
+  border-bottom: 2px solid var(--gold);
+  position: relative;
+  z-index: 1000;
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  color: var(--purple);
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.brand-subtitle {
+  color: var(--gold-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: var(--purple);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--gold-dark);
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  background: var(--ivory);
+  color: var(--purple);
+  font-size: 1.6rem;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+/* HOMEPAGE HERO */
+
+.hero {
+  min-height: 90vh;
+  min-height: 90svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 100px 7%;
+  overflow: hidden;
+
+  /*
+    Add your photograph to the images folder.
+    Name it hero-fashion.jpg.
+  */
+
+  background-image:
+    linear-gradient(
+      rgba(55, 34, 66, 0.48),
+      rgba(55, 34, 66, 0.58)
+    ),
+    url("images/hero-fashion.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 850px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-label,
+.section-label {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 6vw, 4.7rem);
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.hero-slogan {
+  color: #f3d987;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-style: italic;
+  margin-bottom: 22px;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 1.05rem;
+  color: #fffaf2;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  color: #f3d987;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 13px 25px;
+  min-height: 48px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #352540;
+}
+
+.btn-gold:hover {
+  background: #f0d57b;
+  border-color: #f0d57b;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--purple);
+}
+
+/* WELCOME SECTION */
+
+.welcome {
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.welcome .section-label,
+.featured-collections .section-label,
+.brand-message .section-label {
+  color: var(--gold-dark);
+}
+
+.welcome h2,
+.featured-collections h2,
+.brand-message h2 {
+  color: var(--purple);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 760px;
+  margin: 0 auto 25px;
+  color: #6e6055;
+}
+
+.text-link {
+  color: var(--gold-dark);
+  font-weight: 700;
+  display: inline-block;
+}
+
+.text-link:hover {
+  color: var(--purple);
+}
+
+/* FEATURED COLLECTIONS */
+
+.featured-collections {
+  background: var(--cream);
+  text-align: center;
+}
+
+.featured-collections > .section-description {
+  margin-bottom: 35px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin: 35px 0;
+  text-align: left;
+}
+
+.category-card {
+  display: block;
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(73, 48, 95, 0.07);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(73, 48, 95, 0.15);
+}
+
+.category-image {
+  height: 270px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15px;
+  background-color: #e8d8ba;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.category-image span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--purple);
+  font-weight: 800;
+}
+
+/*
+  Add your category photographs to the images folder.
+  Use these exact filenames or change them here.
+*/
+
+.male-image {
+  background-image: url("images/mens-fashion.jpg");
+}
+
+.female-image {
+  background-image: url("images/womens-fashion.jpg");
+}
+
+.wedding-image {
+  background-image: url("images/wedding-fashion.jpg");
+}
+
+.traditional-image {
+  background-image: url("images/traditional-fashion.jpg");
+}
+
+.corporate-image {
+  background-image: url("images/corporate-fashion.jpg");
+}
+
+.category-info {
+  padding: 23px 20px;
+}
+
+.category-info h3 {
+  color: var(--purple);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.category-info p {
+  color: #76675b;
+  font-size: 0.94rem;
+  margin-bottom: 12px;
+}
+
+.category-info .text-link {
+  font-size: 0.9rem;
+}
+
+/* BRAND MESSAGE */
+
+.brand-message {
+  padding: 90px 7%;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(212, 175, 55, 0.17),
+      transparent 38%
+    ),
+    var(--purple);
+  color: var(--white);
+}
+
+.brand-message-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.brand-message h2 {
+  color: var(--ivory);
+  margin-bottom: 20px;
+}
+
+.brand-message .section-label {
+  color: #f0d57b;
+}
+
+.brand-message p:not(.section-label) {
+  color: #f3e9f7;
+  margin-bottom: 28px;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--purple);
+  color: var(--ivory);
+  padding: 60px 5% 20px;
+  border-top: 4px solid var(--gold);
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr 1fr;
+  gap: 35px;
+}
+
+.footer-logo .brand-name {
+  color: var(--ivory);
+}
+
+.footer-logo .brand-subtitle {
+  color: var(--gold);
+}
+
+.footer-brand > p {
+  margin-top: 15px;
+  color: #e6dbea;
+  font-size: 0.93rem;
+}
+
+.footer-column h3 {
+  color: var(--gold);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.footer-column > a {
+  display: block;
+  width: fit-content;
+  margin-bottom: 10px;
+  color: #f3e9f7;
+  overflow-wrap: anywhere;
+}
+
+.footer-column > a:hover {
+  color: var(--gold);
+}
+
+.footer-column p {
+  color: #e6dbea;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.footer-column strong {
+  color: var(--ivory);
+}
+
+.footer-order-link {
+  color: var(--gold) !important;
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-placeholder {
+  color: var(--ivory);
+  border: 1px solid rgba(212, 175, 55, 0.65);
+  border-radius: 4px;
+  padding: 5px 9px;
+  font-size: 0.83rem;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 45px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 249, 237, 0.2);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #e6dbea;
+  font-size: 0.85rem;
+}
+
+/* FLOATING WHATSAPP BUTTON */
+
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 22px;
+  z-index: 2000;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #25d366;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-float svg {
+  display: block;
+}
+
+/* TABLETS */
+
+@media (max-width: 950px) {
+  .site-header {
+    padding: 15px 4%;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+  }
+
+  .main-nav {
+    gap: 15px;
+  }
+
+  .main-nav a {
+    font-size: 0.88rem;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE PHONES */
+
+@media (max-width: 650px) {
+  .site-header {
+    min-height: 76px;
+    padding: 12px 5%;
+    gap: 10px;
+  }
+
+  .brand-name {
+    font-size: 1.08rem;
+    letter-spacing: 1px;
+  }
+
+  .brand-subtitle {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px 5% 20px;
+    background: var(--ivory);
+    border-bottom: 2px solid var(--gold);
+    box-shadow: 0 8px 15px rgba(73, 48, 95, 0.1);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 12px 5px;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+  }
+
+  .hero {
+    min-height: 78vh;
+    min-height: 78svh;
+    padding: 85px 6%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .hero-description {
+    font-size: 0.96rem;
+  }
+
+  .hero-label,
+  .section-label {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .section-padding {
+    padding: 60px 6%;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .category-image {
+    height: 300px;
+  }
+
+  .category-info {
+    padding: 20px;
+  }
+
+  .brand-message {
+    padding: 65px 6%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .whatsapp-float {
+    right: 14px;
+    bottom: 16px;
+    width: 54px;
+    height: 54px;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 360px) {
+  .brand-name {
+    font-size: 0.94rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.64rem;
+    letter-spacing: 2px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .category-image {
+    height: 240px;
+  }
+}
