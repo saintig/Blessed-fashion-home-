@@ -1,315 +1,427 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Blessed Fashion Home | Where African Art Meets Fashion</title>  <meta name="description" content="Discover elegant African fashion, bespoke tailoring, wedding outfits, traditional wear and corporate clothing at Blessed Fashion Home. Explore our fashion gallery.">  <meta name="theme-color" content="#d4af37">  <link rel="stylesheet" href="style.css">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- HOMEPAGE GALLERY LINK STYLES -->  <style>
+    .gallery-highlight {
+      padding: 55px 5%;
+      text-align: center;
+      background: #f8f0df;
+    }
 
-  <title>Blessed Fashion Home | Where African Art Meets Fashion</title>
+    .gallery-highlight-inner {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 35px 22px;
+      border: 2px solid #d4af37;
+      border-radius: 16px;
+      background: #fff9ed;
+    }
 
-  <meta name="description" content="Discover elegant African fashion, bespoke tailoring, wedding outfits, traditional wear and corporate clothing at Blessed Fashion Home.">
+    .gallery-highlight .gallery-icon {
+      font-size: 42px;
+      color: #a98220;
+      margin-bottom: 15px;
+    }
 
-  <meta name="theme-color" content="#d4af37">
+    .gallery-highlight h2 {
+      color: #49305f;
+      font-size: clamp(25px, 5vw, 36px);
+      margin-bottom: 14px;
+    }
 
-  <link rel="stylesheet" href="style.css">
+    .gallery-highlight p {
+      max-width: 650px;
+      margin: 0 auto 24px;
+      line-height: 1.8;
+      color: #49305f;
+    }
 
-  <!-- Social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    .gallery-highlight .gallery-visit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 25px;
+      border: 2px solid #a98220;
+      border-radius: 6px;
+      background: #d4af37;
+      color: #49305f;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
 
-<body>
+    .gallery-highlight .gallery-visit-btn:hover {
+      background: #49305f;
+      color: #fff9ed;
+      border-color: #49305f;
+      transform: translateY(-2px);
+    }
 
-  <!-- HEADER -->
-  <header class="site-header">
+    .gallery-text-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 0;
+      color: #49305f;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .gallery-text-link:hover {
+      color: #a98220;
+    }
+
+    .hero-buttons .gallery-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .gallery-highlight {
+        padding: 35px 4%;
+      }
+
+      .gallery-highlight-inner {
+        padding: 28px 16px;
+      }
+
+      .gallery-highlight .gallery-visit-btn {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+      }
+    }
+  </style></head><body>  <!-- HEADER -->  <header class="site-header">
     <a href="index.html" class="brand">
+      <span class="brand-name">BLESSED</span>
+      <span class="brand-subtitle">FASHION HOME</span>
+    </a><button
+  class="menu-toggle"
+  id="menu-toggle"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="main-nav">
+  ☰
+</button>
+
+<nav class="main-nav" id="main-nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="collections.html">Collections</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+  </header>  <main><!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-label">AFRICAN CREATIVITY • TIMELESS STYLE</p>
+
+    <h1>BLESSED FASHION HOME</h1>
+
+    <p class="hero-slogan">
+      Where African Art Meets Fashion
+    </p>
+
+    <p class="hero-description">
+      Discover the beauty of African fashion through
+      exceptional designs, elegant tailoring and
+      styles created to make you stand out.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="collections.html" class="btn btn-gold">
+        Explore Collections
+      </a>
+
+      <!-- GALLERY LINK 1: HERO BUTTON -->
+      <a href="gallery.html" class="btn btn-outline gallery-hero-btn">
+        <i class="fa-regular fa-images" aria-hidden="true"></i>
+        View Fashion Gallery
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Contact Us
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    DISCOVER YOUR STYLE
+  </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="welcome section-padding">
+  <p class="section-label">WELCOME TO OUR WORLD</p>
+
+  <h2>Fashion Inspired by African Art</h2>
+
+  <p class="section-description">
+    At Blessed Fashion Home, we celebrate African
+    heritage through beautiful clothing, creative
+    designs and attention to detail. From everyday
+    elegance to special occasions, discover fashion
+    that expresses your personality.
+  </p>
+
+  <a href="about.html" class="text-link">
+    Discover Our Story →
+  </a>
+
+  <!-- GALLERY LINK 2: INTRODUCTION -->
+  <div>
+    <a href="gallery.html" class="gallery-text-link">
+      <i class="fa-regular fa-images" aria-hidden="true"></i>
+      See Our Fashion Pictures →
+    </a>
+  </div>
+</section>
+
+<!-- COLLECTION CATEGORIES -->
+<section class="featured-collections section-padding">
+  <p class="section-label">EXPLORE OUR STYLE</p>
+
+  <h2>Our Collections</h2>
+
+  <p class="section-description">
+    Find the perfect outfit for every occasion.
+  </p>
+
+  <div class="category-grid">
+
+    <a href="men.html" class="category-card">
+      <div class="category-image male-image">
+        <span>01</span>
+      </div>
+      <div class="category-info">
+        <h3>Men's Wear</h3>
+        <p>Confident style. Exceptional tailoring.</p>
+        <span class="text-link">Explore Collection →</span>
+      </div>
+    </a>
+
+    <a href="women.html" class="category-card">
+      <div class="category-image female-image">
+        <span>02</span>
+      </div>
+      <div class="category-info">
+        <h3>Women's Wear</h3>
+        <p>Beauty, elegance and individuality.</p>
+        <span class="text-link">Explore Collection →</span>
+      </div>
+    </a>
+
+    <a href="wedding.html" class="category-card">
+      <div class="category-image wedding-image">
+        <span>03</span>
+      </div>
+      <div class="category-info">
+        <h3>Wedding Collection</h3>
+        <p>Make your special day unforgettable.</p>
+        <span class="text-link">Explore Collection →</span>
+      </div>
+    </a>
+
+    <a href="traditional.html" class="category-card">
+      <div class="category-image traditional-image">
+        <span>04</span>
+      </div>
+      <div class="category-info">
+        <h3>Traditional Wear</h3>
+        <p>Celebrate culture through fashion.</p>
+        <span class="text-link">Explore Collection →</span>
+      </div>
+    </a>
+
+    <a href="corporate.html" class="category-card">
+      <div class="category-image corporate-image">
+        <span>05</span>
+      </div>
+      <div class="category-info">
+        <h3>Corporate Wear</h3>
+        <p>Professional style with distinction.</p>
+        <span class="text-link">Explore Collection →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <a href="collections.html" class="btn btn-gold">
+    View All Collections
+  </a>
+</section>
+
+<!-- GALLERY PROMOTION -->
+<section class="gallery-highlight">
+  <div class="gallery-highlight-inner">
+
+    <div class="gallery-icon">
+      <i class="fa-regular fa-images" aria-hidden="true"></i>
+    </div>
+
+    <p class="section-label">EXPLORE OUR DESIGNS</p>
+
+    <h2>Discover Our Fashion Gallery</h2>
+
+    <p>
+      Explore our collection of fashion pictures,
+      from men's and women's wear to wedding outfits,
+      traditional African designs and corporate styles.
+      Find inspiration for your next look.
+    </p>
+
+    <!-- GALLERY LINK 3: LARGE PROMINENT BUTTON -->
+    <a href="gallery.html" class="gallery-visit-btn">
+      <i class="fa-regular fa-images" aria-hidden="true"></i>
+      VIEW ALL FASHION PICTURES
+      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+
+  </div>
+</section>
+
+<!-- BRAND MESSAGE -->
+<section class="brand-message">
+  <div class="brand-message-content">
+    <p class="section-label">MADE WITH CREATIVITY</p>
+
+    <h2>Wear Your Story.<br>Celebrate Your Heritage.</h2>
+
+    <p>
+      African art inspires us. Exceptional fashion
+      brings that inspiration to life.
+    </p>
+
+    <a href="contact.html" class="btn btn-gold">
+      Enquire About Your Outfit
+    </a>
+
+    <!-- GALLERY LINK 4: BRAND MESSAGE -->
+    <p style="margin-top: 22px;">
+      <a href="gallery.html"
+         style="color: #fff9ed; font-weight: 700; text-decoration: underline; text-underline-offset: 5px;">
+        <i class="fa-regular fa-images" aria-hidden="true"></i>
+        Browse Our Fashion Gallery →
+      </a>
+    </p>
+  </div>
+</section>
+
+  </main>  <!-- FOOTER -->  <footer class="site-footer">
+    <div class="footer-grid">  <div class="footer-brand">
+    <a href="index.html" class="brand footer-logo">
       <span class="brand-name">BLESSED</span>
       <span class="brand-subtitle">FASHION HOME</span>
     </a>
 
-    <button
-      class="menu-toggle"
-      id="menu-toggle"
-      type="button"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-      aria-controls="main-nav">
-      ☰
-    </button>
+    <p>Where African Art Meets Fashion.</p>
 
-    <nav class="main-nav" id="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="collections.html">Collections</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <p>
+      Celebrating African creativity through
+      timeless style and exceptional tailoring.
+    </p>
+  </div>
 
-  <main>
+  <div class="footer-column">
+    <h3>Quick Links</h3>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="collections.html">Collections</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="hero-content">
-        <p class="hero-label">AFRICAN CREATIVITY • TIMELESS STYLE</p>
+  <div class="footer-column">
+    <h3>Contact Us</h3>
 
-        <h1>BLESSED FASHION HOME</h1>
+    <p>
+      <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+      Saint IG Street<br>
+      Awka, Anambra State<br>
+      Nigeria.
+    </p>
 
-        <p class="hero-slogan">
-          Where African Art Meets Fashion
-        </p>
+    <a href="https://wa.me/2347039679629"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      WhatsApp: 07039679629
+    </a>
+  </div>
 
-        <p class="hero-description">
-          Discover the beauty of African fashion through
-          exceptional designs, elegant tailoring and
-          styles created to make you stand out.
-        </p>
+  <div class="footer-column">
+    <h3>Follow Our Style</h3>
+    <p>Connect with us on social media.</p>
 
-        <div class="hero-buttons">
-          <a href="collections.html" class="btn btn-gold">
-            Explore Collections
-          </a>
+    <div class="social-links">
 
-          <a href="contact.html" class="btn btn-outline">
-            Contact Us
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-scroll">
-        DISCOVER YOUR STYLE
-      </div>
-    </section>
-
-    <!-- INTRODUCTION -->
-    <section class="welcome section-padding">
-      <p class="section-label">WELCOME TO OUR WORLD</p>
-
-      <h2>Fashion Inspired by African Art</h2>
-
-      <p class="section-description">
-        At Blessed Fashion Home, we celebrate African
-        heritage through beautiful clothing, creative
-        designs and attention to detail. From everyday
-        elegance to special occasions, discover fashion
-        that expresses your personality.
-      </p>
-
-      <a href="about.html" class="text-link">
-        Discover Our Story →
+      <a href="#"
+         class="social-icon"
+         aria-label="Facebook"
+         title="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
       </a>
-    </section>
 
-    <!-- COLLECTION CATEGORIES -->
-    <section class="featured-collections section-padding">
-      <p class="section-label">EXPLORE OUR STYLE</p>
-
-      <h2>Our Collections</h2>
-
-      <p class="section-description">
-        Find the perfect outfit for every occasion.
-      </p>
-
-      <div class="category-grid">
-
-        <a href="men.html" class="category-card">
-          <div class="category-image male-image">
-            <span>01</span>
-          </div>
-          <div class="category-info">
-            <h3>Men's Wear</h3>
-            <p>Confident style. Exceptional tailoring.</p>
-            <span class="text-link">Explore Collection →</span>
-          </div>
-        </a>
-
-        <a href="women.html" class="category-card">
-          <div class="category-image female-image">
-            <span>02</span>
-          </div>
-          <div class="category-info">
-            <h3>Women's Wear</h3>
-            <p>Beauty, elegance and individuality.</p>
-            <span class="text-link">Explore Collection →</span>
-          </div>
-        </a>
-
-        <a href="wedding.html" class="category-card">
-          <div class="category-image wedding-image">
-            <span>03</span>
-          </div>
-          <div class="category-info">
-            <h3>Wedding Collection</h3>
-            <p>Make your special day unforgettable.</p>
-            <span class="text-link">Explore Collection →</span>
-          </div>
-        </a>
-
-        <a href="traditional.html" class="category-card">
-          <div class="category-image traditional-image">
-            <span>04</span>
-          </div>
-          <div class="category-info">
-            <h3>Traditional Wear</h3>
-            <p>Celebrate culture through fashion.</p>
-            <span class="text-link">Explore Collection →</span>
-          </div>
-        </a>
-
-        <a href="corporate.html" class="category-card">
-          <div class="category-image corporate-image">
-            <span>05</span>
-          </div>
-          <div class="category-info">
-            <h3>Corporate Wear</h3>
-            <p>Professional style with distinction.</p>
-            <span class="text-link">Explore Collection →</span>
-          </div>
-        </a>
-
-      </div>
-
-      <a href="collections.html" class="btn btn-gold">
-        View All Collections
+      <a href="#"
+         class="social-icon"
+         aria-label="Instagram"
+         title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
       </a>
-    </section>
 
-    <!-- BRAND MESSAGE -->
-    <section class="brand-message">
-      <div class="brand-message-content">
-        <p class="section-label">MADE WITH CREATIVITY</p>
+      <a href="#"
+         class="social-icon"
+         aria-label="TikTok"
+         title="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
 
-        <h2>Wear Your Story.<br>Celebrate Your Heritage.</h2>
+      <a href="https://wa.me/2347039679629"
+         class="social-icon"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="WhatsApp"
+         title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
 
-        <p>
-          African art inspires us. Exceptional fashion
-          brings that inspiration to life.
-        </p>
-
-        <a href="contact.html" class="btn btn-gold">
-          Enquire About Your Outfit
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-grid">
-
-      <div class="footer-brand">
-        <a href="index.html" class="brand footer-logo">
-          <span class="brand-name">BLESSED</span>
-          <span class="brand-subtitle">FASHION HOME</span>
-        </a>
-
-        <p>Where African Art Meets Fashion.</p>
-
-        <p>
-          Celebrating African creativity through
-          timeless style and exceptional tailoring.
-        </p>
-      </div>
-
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="collections.html">Collections</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="footer-column">
-        <h3>Contact Us</h3>
-
-        <p>
-          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-          Saint IG Street<br>
-          Awka, Anambra State<br>
-          Nigeria.
-        </p>
-
-        <a href="https://wa.me/2347039679629"
-           target="_blank"
-           rel="noopener noreferrer">
-          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-          WhatsApp: 07039679629
-        </a>
-      </div>
-
-      <div class="footer-column">
-        <h3>Follow Our Style</h3>
-        <p>Connect with us on social media.</p>
-
-        <div class="social-links">
-
-          <!-- Replace # with your actual account links later -->
-          <a href="#"
-             class="social-icon"
-             aria-label="Facebook"
-             title="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-
-          <a href="#"
-             class="social-icon"
-             aria-label="Instagram"
-             title="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a href="#"
-             class="social-icon"
-             aria-label="TikTok"
-             title="TikTok">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-
-          <a href="https://wa.me/2347039679629"
-             class="social-icon"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="WhatsApp"
-             title="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-
-          <a href="#"
-             class="social-icon"
-             aria-label="X"
-             title="X">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-
-        </div>
-      </div>
+      <a href="#"
+         class="social-icon"
+         aria-label="X"
+         title="X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
 
     </div>
+  </div>
 
-    <div class="footer-bottom">
-      <p>
-        &copy; <span id="current-year">2026</span>
-        Blessed Fashion Home. All rights reserved.
-      </p>
+</div>
 
-      <p>Where African Art Meets Fashion.</p>
-    </div>
-  </footer>
+<div class="footer-bottom">
+  <p>
+    &copy; <span id="current-year">2026</span>
+    Blessed Fashion Home. All rights reserved.
+  </p>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a
-    href="https://wa.me/2347039679629?text=Hello%20Blessed%20Fashion%20Home%2C%20I%20would%20like%20to%20make%20an%20enquiry."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat with Blessed Fashion Home on WhatsApp"
-    title="Chat with us on WhatsApp">
+  <p>Where African Art Meets Fashion.</p>
+</div>
 
-    <i class="fa-brands fa-whatsapp" aria-hidden="true"
-       style="font-size: 30px;"></i>
-  </a>
+  </footer>  <!-- FLOATING WHATSAPP BUTTON --><a
+href="https://wa.me/2347039679629?text=Hello%20Blessed%20Fashion%20Home%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+class="whatsapp-float"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Chat with Blessed Fashion Home on WhatsApp"
+title="Chat with us on WhatsApp">
 
-  <script src="script.js"></script>
+<i class="fa-brands fa-whatsapp" aria-hidden="true"
+   style="font-size: 30px;"></i>
 
-</body>
+  </a>  <script src="script.js"></script></body>
 </html>
