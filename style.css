@@ -745,3 +745,33 @@ a {
     height: 240px;
   }
 }
+
+
+/* SOCIAL MEDIA ICONS */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.social-links .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 26px;
+  border-radius: 50%;
+  background-color: #d4af37;
+  color: #49305f;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links .social-icon:hover {
+  background-color: #49305f;
+  color: #fff9ed;
+  transform: scale(1.12);
+}
