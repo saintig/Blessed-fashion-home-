@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,9 @@
   <meta name="theme-color" content="#d4af37">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -26,6 +28,7 @@
     <button
       class="menu-toggle"
       id="menu-toggle"
+      type="button"
       aria-label="Open navigation menu"
       aria-expanded="false"
       aria-controls="main-nav">
@@ -107,7 +110,7 @@
 
       <div class="category-grid">
 
-        <a href="collections.html#male" class="category-card">
+        <a href="men.html" class="category-card">
           <div class="category-image male-image">
             <span>01</span>
           </div>
@@ -118,7 +121,7 @@
           </div>
         </a>
 
-        <a href="collections.html#female" class="category-card">
+        <a href="women.html" class="category-card">
           <div class="category-image female-image">
             <span>02</span>
           </div>
@@ -129,7 +132,7 @@
           </div>
         </a>
 
-        <a href="collections.html#wedding" class="category-card">
+        <a href="wedding.html" class="category-card">
           <div class="category-image wedding-image">
             <span>03</span>
           </div>
@@ -140,7 +143,7 @@
           </div>
         </a>
 
-        <a href="collections.html#traditional" class="category-card">
+        <a href="traditional.html" class="category-card">
           <div class="category-image traditional-image">
             <span>04</span>
           </div>
@@ -151,7 +154,7 @@
           </div>
         </a>
 
-        <a href="collections.html#corporate" class="category-card">
+        <a href="corporate.html" class="category-card">
           <div class="category-image corporate-image">
             <span>05</span>
           </div>
@@ -189,7 +192,7 @@
 
   </main>
 
-  <!-- SHARED FOOTER -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-grid">
 
@@ -218,27 +221,66 @@
 
       <div class="footer-column">
         <h3>Contact Us</h3>
-        <p class="address-placeholder">
-          Business address to be added
+
+        <p>
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          Saint IG Street<br>
+          Awka, Anambra State<br>
+          Nigeria.
         </p>
 
         <a href="https://wa.me/2347039679629"
-           target="_blank" rel="noopener">
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           WhatsApp: 07039679629
         </a>
-
-        <p>Other contact details coming soon.</p>
       </div>
 
       <div class="footer-column">
         <h3>Follow Our Style</h3>
         <p>Connect with us on social media.</p>
 
-        <!-- Add real social media links later -->
         <div class="social-links">
-          <span class="social-placeholder">Instagram</span>
-          <span class="social-placeholder">Facebook</span>
-          <span class="social-placeholder">TikTok</span>
+
+          <!-- Replace # with your actual account links later -->
+          <a href="#"
+             class="social-icon"
+             aria-label="Facebook"
+             title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#"
+             class="social-icon"
+             aria-label="Instagram"
+             title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#"
+             class="social-icon"
+             aria-label="TikTok"
+             title="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+          <a href="https://wa.me/2347039679629"
+             class="social-icon"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="WhatsApp"
+             title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="#"
+             class="social-icon"
+             aria-label="X"
+             title="X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
         </div>
       </div>
 
@@ -259,17 +301,12 @@
     href="https://wa.me/2347039679629?text=Hello%20Blessed%20Fashion%20Home%2C%20I%20would%20like%20to%20make%20an%20enquiry."
     class="whatsapp-float"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     aria-label="Chat with Blessed Fashion Home on WhatsApp"
     title="Chat with us on WhatsApp">
 
-    <svg viewBox="0 0 32 32"
-         width="30"
-         height="30"
-         aria-hidden="true">
-      <path fill="currentColor"
-        d="M16 .8A15.1 15.1 0 0 0 3.1 23.8L1 31l7.4-2A15.2 15.2 0 1 0 16 .8Zm0 27.6c-2.4 0-4.7-.7-6.7-2l-.5-.3-4.4 1.2 1.2-4.3-.3-.5a12.4 12.4 0 1 1 10.7 5.9Zm6.8-9.3c-.4-.2-2.3-1.2-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7l-1.2-2.9c-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.2s1.3 3.7 1.5 4c.2.3 2.6 4 6.3 5.5 3.8 1.5 3.8 1 4.5 1 .7-.1 2.3-.9 2.6-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5Z"/>
-    </svg>
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"
+       style="font-size: 30px;"></i>
   </a>
 
   <script src="script.js"></script>
